@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03964880-3C23-4E5B-A1AF-3C9117583CE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonalLife</RootNamespace>
+    <AssemblyName>PersonalLife</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Personal Life(v21)\PersonalLife.View\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmImc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImc.Designer.cs">
+      <DependentUpon>frmImc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAdm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdm.Designer.cs">
+      <DependentUpon>UCAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAjuda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAjuda.Designer.cs">
+      <DependentUpon>UCAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBemVindo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBemVindo.Designer.cs">
+      <DependentUpon>UCBemVindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBiblioteca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBiblioteca.Designer.cs">
+      <DependentUpon>UCBiblioteca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCadastroExercicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCadastroExercicio.Designer.cs">
+      <DependentUpon>UCCadastroExercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEsqueciSenha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEsqueciSenha.Designer.cs">
+      <DependentUpon>UCEsqueciSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExercicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExercicio.Designer.cs">
+      <DependentUpon>UCExercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCListarExercicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListarExercicio.Designer.cs">
+      <DependentUpon>UCListarExercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCListarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListarUsuario.Designer.cs">
+      <DependentUpon>UCListarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMeuPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMeuPerfil.Designer.cs">
+      <DependentUpon>UCMeuPerfil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmImc.resx">
+      <DependentUpon>frmImc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCAdm.resx">
+      <DependentUpon>UCAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAjuda.resx">
+      <DependentUpon>UCAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBemVindo.resx">
+      <DependentUpon>UCBemVindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBiblioteca.resx">
+      <DependentUpon>UCBiblioteca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCadastroExercicio.resx">
+      <DependentUpon>UCCadastroExercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEsqueciSenha.resx">
+      <DependentUpon>UCEsqueciSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExercicio.resx">
+      <DependentUpon>UCExercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListarExercicio.resx">
+      <DependentUpon>UCListarExercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListarUsuario.resx">
+      <DependentUpon>UCListarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMeuPerfil.resx">
+      <DependentUpon>UCMeuPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalLife.Controle\PersonalLife.Controle.csproj">
+      <Project>{6c175bea-9d0a-4c20-a677-bf9464d63fb3}</Project>
+      <Name>PersonalLife.Controle</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logomarca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8adea69-seta2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo PL - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltimateBraveIchidna-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

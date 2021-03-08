@@ -37,21 +37,13 @@ CREATE TABLE ClienteExercicio(
    REFERENCES dbo.Usuario (idUsuario)
  );
 
-SELECT * FROM Sistema WHERE idExercicio != '5';
-
 INSERT INTO Usuario VALUES ('b','1','1','1','20.7','Perder Peso','b','12345','b@pl.com');
-SELECT * FROM ClienteExercicio WHERE idUsuario = 1;
-
-SELECT c.idExercicio FROM Sistema as s, ClienteExercicio as c WHERE c.idExercicio != s.idExercicio;
-
-SELECT s.exercicio, s.repeticao FROM Sistema as s, ClienteExercicio as c  WHERE s.idExercicio != c.idExercicio AND c.idUsuario = '1';
+SELECT * FROM ClienteExercicio WHERE idUsuario = 2;
 
  INSERT INTO Usuario VALUES ('Pedro','11111111','17','1.81','60.5','Ganhar Massa','pedro','12345','pedro@pl.com'),
   ('Giovanny','22222222','18','1.75','59.6','Ganhar Massa','giovanny','12345','giovanny@pl.com'),
     ('Fernanda','33333333','18','1.71','59','Perder Peso','fernanda','12345','fernanda@pl.com'),
 	  ('a','4','4','4','4','4','a','1','a@pl.com');
-
-	  INSERT INTO ClienteExercicio VALUES ('1', '4', 'Abdominal', '30', '10', '4')
 
  INSERT INTO Sistema VALUES 
  ('Abdominal','20','30','4'),('Crucifixo','5','30','4'),('Prancha','1','30','4'),
